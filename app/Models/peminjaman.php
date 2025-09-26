@@ -26,7 +26,7 @@ class peminjaman extends Model
             if ($book && $book->stock >= $peminjaman->stock) {
                 $book->decrement('stock', $peminjaman->quantity);
             } else {
-                throw new \Exception("Stok tidak cukup!");
+                throw new \Exception("Out Of Stock!");
             }
         });
  
