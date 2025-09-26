@@ -39,7 +39,7 @@ class PeminjamanResource extends Resource
                     Forms\Components\TextInput::make('quantity')
                     ->label('Quantity')
                     ->numeric()
-  -> relationship ('book','com.id')
+                    ->relationship ('book','com.id')
                     ->required(),
 
 
